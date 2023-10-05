@@ -1,0 +1,23 @@
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #361a21;
+}
+
+.logo {
+    margin: 0.5em;
+    color: #ffff;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 2em;
+}
+
+.menu-items {
+    margin: 1em;
+    list-style: none;
+    color: #ffff;
+}
