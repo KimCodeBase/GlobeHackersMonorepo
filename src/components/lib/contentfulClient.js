@@ -10,13 +10,15 @@ const getBlogPostData = async () => {
   try {
     const getBlogPostEntries = await client.getEntries({
       content_type: 'blogPost',
+      include: 10,
     });
-
     console.log(getBlogPostEntries);
     return getBlogPostEntries;
   } catch(error) {
     console.error(error.message);
     }
 };
+
+
 
 export { getBlogPostData };
