@@ -34,7 +34,7 @@ flex-direction: column;
 width: 35vw;
 align-self: flex-end;
 padding: 1em;
-
+box-shadow: 5px 5px 5px rgb(234, 240, 242);
 }
 
 .Lg-title {
@@ -59,7 +59,6 @@ font-style: italic;
 
 .Lg-article {
 width: 35vw;
-padding: auto;
 margin-bottom: 2em;
 text-align:start;
 
@@ -74,6 +73,8 @@ text-align:start;
     justify-content: center;
     text-align: center;
     width: 42vw;
+    box-shadow: 5px 5px 5px rgb(234, 240, 242);
+
 }
 
 .li-items {

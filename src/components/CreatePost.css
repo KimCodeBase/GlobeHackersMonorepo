@@ -1,0 +1,52 @@
+.CreatePostForm{
+    box-shadow: 5px 5px 5px rgb(234, 240, 242);
+    width: 60vw;
+    border-radius: 5px;
+    margin: 8% 20%;
+
+}
+
+.Fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 60vh;
+    padding: 1em;
+}
+
+#title {
+
+}
+.headline {
+    margin: 1em;
+    font-size: x-large;
+}
+
+.l{
+    margin: 1em;
+    font-weight: 500;
+}
+.i{
+    box-shadow: 5px 5px 5px rgb(234, 240, 242);
+    width: 40vw;
+    height: 5vh;
+    border-radius: 5px;
+}
+
+.article-i{
+    box-shadow: 5px 5px 5px rgb(234, 240, 242);
+    width: 40vw;
+    height: 10vw;
+}
+.createPostBtn {
+    color: #ffff;
+    background-color: #000;
+    font-size: 15px;
+    padding: 1em;
+    margin: 1em;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 40vw;
+}
