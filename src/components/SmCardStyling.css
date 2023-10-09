@@ -11,6 +11,7 @@
     margin: 2.5em;
     padding: 2.5em;
     border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(234, 240, 242);
 }
 
 .container {
