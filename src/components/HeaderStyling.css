@@ -2,7 +2,8 @@
     background-image: url('public/hendrik-morkel-cGaBxdRhbNU-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 700px;
+    /* Increased height */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,4 +19,41 @@
 
 .header-subtitle {
     font-size: 1.5em;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    /* Space between search bar and title */
+}
+
+.search-input {
+    padding: 12px 20px;
+    /* Increased padding for a bigger input field */
+    font-size: 1.2em;
+    /* Bigger font size */
+    border: 2px solid #ffffff;
+    /* White border */
+    border-radius: 25px;
+    /* Rounded edges */
+    outline: none;
+    width: 300px;
+    /* Increased width */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Slight transparency */
+    color: #ffffff;
+    /* White text color */
+    transition: transform 0.3s;
+    /* Smooth transition for hover effect */
+}
+
+.search-input::placeholder {
+    color: #ffffff;
+    /* White placeholder text */
+}
+
+.search-input:hover {
+    transform: scale(1.05);
+    /* Slightly enlarges the input field on hover */
 }

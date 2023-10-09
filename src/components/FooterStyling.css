@@ -1,6 +1,7 @@
 .footer-container {
     background-color: black;
-    padding: 2em 0;
+    padding: 4em 0;
+    /* Increased padding for a bigger footer */
     font-family: 'Arial', sans-serif;
 }
 
@@ -13,58 +14,67 @@
     padding: 0 2em;
 }
 
-.newsletter-section {
-    display: flex;
-    align-items: center;
-}
-
 .newsletter-input {
-    padding: 0.5em;
+    padding: 1em;
     border: none;
     border-radius: 4px 0 0 4px;
     outline: none;
-    width: 200px;
+    width: 250px;
+    font-size: 1.1em;
 }
 
 .newsletter-btn {
-    padding: 0.5em 1em;
+    padding: 1em 1.5em;
     border: none;
     border-radius: 0 4px 4px 0;
-    background-color: #fff;
-    color: grey;
+    background-color: black;
+    color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .newsletter-btn:hover {
-    background-color: #aaa;
+    background-color: #333;
+    color: #eee;
 }
 
-.footer-right {
+.footer-columns {
+    flex: 2;
     display: flex;
     gap: 2em;
+    justify-content: flex-start;
+    /* Columns start on the left */
+    order: -1;
+    /* This will ensure the columns are on the left side */
 }
 
-.social-links,
+.top-places,
+.explore,
 .footer-links {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
 
-.footer-links a,
-.social-links a {
+.top-places h3,
+.explore h3,
+.footer-links h3 {
     color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+    margin-bottom: 0.5em;
 }
 
-.footer-links a:hover,
-.social-links a:hover {
-    color: #aaa;
+.top-places p,
+.explore p,
+.footer-links p {
+    color: #fff;
+    margin: 0;
 }
 
 .footer-bottom {
     text-align: center;
     margin-top: 2em;
+    color: azure;
+    font-size: 0.8em;
+    /* Made the copyright text smaller */
 }

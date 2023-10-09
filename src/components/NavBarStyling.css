@@ -1,49 +1,36 @@
 .nav-container {
     display: flex;
     justify-content: center;
-    /* Center the items */
     align-items: center;
     background-color: #000;
-    /* Black background */
     padding: 1em 2em;
-    /* Padding for top/bottom and left/right */
     font-family: 'Arial', sans-serif;
-    /* Use a similar font to 12hrs.net */
 }
 
 .logo {
-    margin: 0 2em;
-    /* Margin on left/right */
+    margin: 0 1em;
+    /* Adjusted margin for even spacing */
     color: #fff;
     font-size: 1.5em;
-    /* Increase logo size */
     font-weight: bold;
-    /* Bold logo */
     letter-spacing: 2px;
-    /* Space between letters */
 }
 
 .nav-button {
     background: none;
-    /* No background */
     border: none;
-    /* No border */
     color: #fff;
-    /* White text */
     font-size: 1em;
-    /* Font size */
     cursor: pointer;
-    /* Hand cursor on hover */
     transition: color 0.3s;
-    /* Smooth color transition */
+    margin: 0 1em;
+    /* Adjusted margin for spacing between buttons */
 }
 
 .nav-button:hover {
     color: #aaa;
-    /* Light gray color on hover */
 }
 
 .nav-button:focus {
     outline: none;
-    /* Remove focus outline */
 }
