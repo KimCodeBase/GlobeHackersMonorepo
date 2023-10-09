@@ -1,11 +1,8 @@
 .video-container {
     position: relative;
     width: 40%;
-    /* Reduced from 60% to 40% to make the video even smaller */
     padding-top: 22.5%;
-    /* Adjusted for 16:9 Aspect Ratio with the new width */
     margin: 2em auto;
-    /* Centers the video horizontally */
     overflow: hidden;
 }
 
