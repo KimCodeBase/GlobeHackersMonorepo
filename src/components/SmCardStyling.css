@@ -61,17 +61,18 @@
 .float:hover {
     transform: scale(0.9);
 }
+
 .img:hover {
     transform: scale(1.1);
 }
 
 .article {
-overflow-y: hidden;
-width: 50vw;
-height: 19.8vh;
+    overflow-y: hidden;
+    width: 50vw;
+    height: 19.8vh;
 }
 
-.rightCard{
+.rightCard {
     max-height: 40vh;
     max-width: 60vw;
     padding: 1em;
@@ -91,25 +92,24 @@ height: 19.8vh;
     transition: all 0.3s ease-in-out;
     width: 50vw;
     align-self: center;
-  }
+}
 
-  .drop-btn:hover {
+.drop-btn:hover {
     transform: scale(0.8);
-  }
-  
+}
 
-@media screen and (max-width:480px){
+
+@media screen and (max-width:480px) {
     .outer-div {
         display: flex;
         flex-direction: column;
         padding: 0;
-        margin: 1em ;
+        margin: 1em;
         max-width: 95vw;
         height: 80vh
-        
     }
 
-    .img{
+    .img {
         padding: 0;
         align-self: flex-start;
         margin-top: -7vh;
@@ -125,13 +125,14 @@ height: 19.8vh;
         width: 100%;
         justify-content: space-around;
     }
+
     .float {
         padding: 0;
         width: 100%;
         justify-content: space-between;
     }
 
-    .article{
+    .article {
         width: auto;
         overflow: hidden;
     }
