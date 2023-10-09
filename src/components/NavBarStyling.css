@@ -1,23 +1,36 @@
 .nav-container {
     display: flex;
-    justify-content: space-between;
-    background-color: #361a21;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 1em 2em;
+    font-family: 'Arial', sans-serif;
 }
 
 .logo {
-    margin: 0.5em;
-    color: #ffff;
+    margin: 0 1em;
+    /* Adjusted margin for even spacing */
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
-.menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-right: 2em;
+.nav-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 0 1em;
+    /* Adjusted margin for spacing between buttons */
 }
 
-.menu-items {
-    margin: 1em;
-    list-style: none;
-    color: #ffff;
+.nav-button:hover {
+    color: #aaa;
+}
+
+.nav-button:focus {
+    outline: none;
 }
