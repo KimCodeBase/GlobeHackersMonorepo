@@ -13,17 +13,26 @@ export default function Footer() {
           />
           <button className="newsletter-btn">Subscribe</button>
         </div>
-        <div className="footer-right">
-          <div className="social-links">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Pinterest</a>
+        <div className="footer-columns">
+          <div className="top-places">
+            <h3>TOP PLACES</h3>
+            <p>Britain</p>
+            <p>Iceland</p>
+            <p>Italy</p>
+            <p>Spain</p>
+          </div>
+          <div className="explore">
+            <h3>EXPLORE</h3>
+            <p>City Breaks</p>
+            <p>Scenic Trips</p>
+            <p>Best Hikes</p>
+            <p>Road Trips</p>
           </div>
           <div className="footer-links">
-            <a href="#">About</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Impressum</a>
+            <h3>About Us</h3>
+            <p>About</p>
+            <p>Privacy Policy</p>
+            <p>Impressum</p>
           </div>
         </div>
       </div>
