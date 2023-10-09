@@ -1,6 +1,7 @@
 import SmCard from './components/SmCard';
 import Navbar from './components/Navbar';
 import LgCard from './components/LgCard';
+import CreatePost from './components/CreatePost';
 import './App.css'
 import { useState, useEffect } from 'react';
 import { getBlogPostData } from './components/lib/contentfulClient';
@@ -30,6 +31,7 @@ export default function App() {
   return (
     <>
     <Navbar />
+    <CreatePost />
     { blogPosts.map((post, index) => (
       <LgCard 
       key={index}
