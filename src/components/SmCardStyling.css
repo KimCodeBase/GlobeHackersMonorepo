@@ -66,9 +66,9 @@
 }
 
 .article {
-overflow-y: scroll;
+overflow-y: hidden;
 width: 50vw;
-height: 20vh;
+height: 20.5vh;
 }
 
 .rightCard{
@@ -90,6 +90,7 @@ height: 20vh;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
     width: 50vw;
+    align-self: center;
   }
 
   .drop-btn:hover {
@@ -97,3 +98,41 @@ height: 20vh;
   }
   
 
+@media screen and (max-width:480px){
+    .outer-div {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 1em ;
+        max-width: 95vw;
+        height: 80vh
+        
+    }
+
+    .img{
+        padding: 0;
+        align-self: flex-start;
+        margin-top: -7vh;
+        height: 28vh;
+        width: auto;
+        transition: none;
+    }
+
+    .rightCard {
+        padding: 0;
+        margin-top: 22vh;
+        height: 25%;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .float {
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .article{
+        width: auto;
+        overflow: hidden;
+    }
+}

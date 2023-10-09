@@ -1,8 +1,10 @@
 import SmCard from './components/SmCard';
 import Navbar from './components/Navbar';
+import LgCard from './components/LgCard';
 import './App.css'
 import { useState, useEffect } from 'react';
 import { getBlogPostData } from './components/lib/contentfulClient';
+
 
 
 
@@ -28,8 +30,22 @@ export default function App() {
   return (
     <>
     <Navbar />
+    { blogPosts.map((post, index) => (
+      <LgCard 
+      key={index}
+      title={post.fields.title}
+      date={post.fields.date}
+      author={post.fields.author}
+      photo={post.fields.photo.fields.file.url}
+      article={post.fields.article}
+      listTitle={post.fields.listTitle}
+      recommendations= {post.fields.recommendations}
+      />
+    ))
+    
+  }
     {blogPosts.map((post, index) => (
-        <SmCard
+          <SmCard
           key={index}
           title={post.fields.title}
           date={post.fields.date}
@@ -37,7 +53,8 @@ export default function App() {
           photo={post.fields.photo.fields.file.url}
           article={post.fields.article}
         />
-      ))}
+      ))} 
+
     </>
   );
   }
