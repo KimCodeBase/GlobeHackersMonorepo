@@ -1,0 +1,15 @@
+.features-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light gray background */
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features-section p {
+    font-size: 18px;
+}
