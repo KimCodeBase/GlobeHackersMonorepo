@@ -1,15 +1,20 @@
 .features-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-    /* Light gray background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5em 0;
+    background-color: white;
+    color: #000;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.subtitle {
+    font-size: 1.5em;
     text-align: center;
-}
-
-.features-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.features-section p {
-    font-size: 18px;
+    max-width: 800px;
 }
