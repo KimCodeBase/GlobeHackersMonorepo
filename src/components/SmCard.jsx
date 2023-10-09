@@ -15,7 +15,7 @@ return (
     <p className="author">{author}</p>
     </div>
     <div className='article'>{article}</div>
-    <button className='drop-btn'>Article</button>
+    <button className='drop-btn'>Full Article</button>
     </div>
   </div>
   </div>
