@@ -37,5 +37,5 @@ LgCard.propTypes = {
     description: PropTypes.string,
     article: PropTypes.string,
     listTitle:PropTypes.string,
-    recommendations: PropTypes.string
+    recommendations: PropTypes.array
   };

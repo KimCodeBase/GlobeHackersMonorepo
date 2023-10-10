@@ -19,6 +19,4 @@ const getBlogPostData = async () => {
     }
 };
 
-
-
 export { getBlogPostData };
