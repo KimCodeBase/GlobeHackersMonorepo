@@ -1,6 +1,4 @@
-import './CreatePost.css';
-
-
+import './CreatePost.css'
 
 export default function CreatePost() {
 
@@ -77,5 +75,5 @@ export default function CreatePost() {
   </div>
 </form>
 </>
-)}
-
+);
+}
