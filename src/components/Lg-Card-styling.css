@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+
 }
 
 
@@ -41,6 +42,7 @@ body {
 .Lg-title {
     font-size: larger;
     padding: 2em;
+    
 }
 
 .Lg-float {
@@ -67,21 +69,19 @@ body {
 
 .LgList {
     border-radius: 5px;
-    padding: 1.5em;
-    margin: 1em;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     width: 42vw;
     box-shadow: 5px 5px 5px rgb(234, 240, 242);
+    font-family: 'Neucha', cursive;
 
 }
 
 .li-items {
-
     margin: 0.5em;
-    padding: 0.5em;
     width: 40vw;
     list-style: none;
     transition: all 0.3s ease-in-out;
@@ -90,7 +90,8 @@ body {
 .li-title {
     width: 40vw;
     font-size: x-large;
-    padding: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
 }
 
 .li-items:hover {

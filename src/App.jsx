@@ -19,6 +19,9 @@ export default function App() {
       try {
         const blogPostData = await getBlogPostData();
         setBlogPosts(blogPostData.items);
+        //  idea for blogPost state  setBlogPosts(blogPostData.items.fields);
+        //then data would match structure coming from form
+
         setLoading(false);
       } catch (error) {
         console.error(error);
@@ -33,33 +36,36 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <CreatePost />
-      {blogPosts.map((post, index) => (
-        <LgCard
-          key={index}
-          title={post.fields.title}
-          date={post.fields.date}
-          author={post.fields.author}
-          photo={post.fields.photo.fields.file.url}
-          article={post.fields.article}
-          listTitle={post.fields.listTitle}
-          recommendations={post.fields.recommendations}
-        />
-      ))}
+      <Header />
+      <FeaturesSection />
+      <VideoSection />
+      <StorySection />
       {blogPosts.map((post, index) => (
         <SmCard
           key={index}
           title={post.fields.title}
           date={post.fields.date}
           author={post.fields.author}
-          photo={post.fields.photo.fields.file.url}
+          imageUrl={post.fields.imageUrl}
           article={post.fields.article}
         />
       ))}
-      <Header />
-      <FeaturesSection />
-      <VideoSection />
-      <StorySection />
+      {blogPosts.map((post, index) => (
+        <LgCard
+          key={index}
+          title={post.fields.title}
+          date={post.fields.date}
+          author={post.fields.author}
+          imageUrl={post.fields.imageUrl}
+          article={post.fields.article}
+          dining={post.fields.dining}
+          adventures={post.fields.adventures}
+          shopping={post.fields.shopping}
+        />
+      ))}
+      
+      <CreatePost/>
+
       <Footer />
     </>
   );
