@@ -1,7 +1,6 @@
 .footer-container {
     background-color: black;
     padding: 4em 0;
-    /* Increased padding for a bigger footer */
     font-family: 'Arial', sans-serif;
 }
 
@@ -14,29 +13,22 @@
     padding: 0 2em;
 }
 
-.newsletter-input {
-    padding: 1em;
-    border: none;
-    border-radius: 4px 0 0 4px;
-    outline: none;
-    width: 250px;
-    font-size: 1.1em;
+.social-icons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
 }
 
-.newsletter-btn {
-    padding: 1em 1.5em;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    background-color: black;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+.social-icon {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    transition: fill 0.3s;
 }
 
-.newsletter-btn:hover {
-    background-color: #333;
-    color: #eee;
+.social-icon:hover {
+    fill: #eee;
 }
 
 .footer-columns {
@@ -44,9 +36,7 @@
     display: flex;
     gap: 2em;
     justify-content: flex-start;
-    /* Columns start on the left */
     order: -1;
-    /* This will ensure the columns are on the left side */
 }
 
 .top-places,
