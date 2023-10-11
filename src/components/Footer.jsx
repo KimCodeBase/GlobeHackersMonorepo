@@ -5,13 +5,36 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-content">
-        <div className="newsletter-section">
-          <input
-            type="email"
-            placeholder="Your email address"
-            className="newsletter-input"
-          />
-          <button className="newsletter-btn">Subscribe</button>
+        <div className="social-icons">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="social-icon">...</svg>
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="social-icon">...</svg>
+          </a>
+          <a
+            href="https://pinterest.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {/* Replace with your Pinterest SVG icon */}
+            <svg className="social-icon">...</svg>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg className="social-icon">...</svg>
+          </a>
         </div>
         <div className="footer-columns">
           <div className="top-places">

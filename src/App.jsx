@@ -6,8 +6,12 @@ import Header from "./components/Header";
 import FeaturesSection from "./components/FeaturesSection";
 import StorySection from "./components/StorySection";
 import VideoSection from "./components/VideoSection";
-import "./App.css";
+import About from "./Pages/About";
+import Home from "./Pages/Home";
 import Footer from "./components/Footer";
+
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getBlogPostData } from "./components/lib/contentfulClient";
 
@@ -32,35 +36,40 @@ export default function App() {
   }
   return (
     <>
-      <Navbar />
-      <CreatePost />
-      {blogPosts.map((post, index) => (
-        <LgCard
-          key={index}
-          title={post.fields.title}
-          date={post.fields.date}
-          author={post.fields.author}
-          photo={post.fields.photo.fields.file.url}
-          article={post.fields.article}
-          listTitle={post.fields.listTitle}
-          recommendations={post.fields.recommendations}
-        />
-      ))}
-      {blogPosts.map((post, index) => (
-        <SmCard
-          key={index}
-          title={post.fields.title}
-          date={post.fields.date}
-          author={post.fields.author}
-          photo={post.fields.photo.fields.file.url}
-          article={post.fields.article}
-        />
-      ))}
-      <Header />
-      <FeaturesSection />
-      <VideoSection />
-      <StorySection />
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Header />
+        <CreatePost />
+        {blogPosts.map((post, index) => (
+          <LgCard
+            key={index}
+            title={post.fields.title}
+            date={post.fields.date}
+            author={post.fields.author}
+            article={post.fields.article}
+            listTitle={post.fields.listTitle}
+            recommendations={post.fields.recommendations}
+          />
+        ))}
+        {blogPosts.map((post, index) => (
+          <SmCard
+            key={index}
+            title={post.fields.title}
+            date={post.fields.date}
+            author={post.fields.author}
+            article={post.fields.article}
+          />
+        ))}
+        <VideoSection />
+
+        <FeaturesSection />
+        <StorySection />
+        <Footer />
+      </Router>
     </>
   );
 }
