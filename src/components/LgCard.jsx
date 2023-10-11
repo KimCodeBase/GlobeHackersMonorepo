@@ -1,7 +1,7 @@
 import './Lg-Card-styling.css'
 import PropTypes from 'prop-types';
 
-export default function LgCard ( {title, date, author,  photo, description, article, listTitle,  recommendations}) {
+export default function LgCard ( {title, date, author,  imageUrl, article, dining, adventures, shopping }) {
 
     return ( 
 <div className="Lg-container">
@@ -14,15 +14,13 @@ export default function LgCard ( {title, date, author,  photo, description, arti
     <div className='Lg-article'> {article} </div>
     </div>
     <div className='Lg-Top-Section'>
-    <img className="Lg-img" src= {photo} alt={description} />
-        <ul className='LgList'>
-            <h2 className='li-title'> { listTitle } </h2> 
-        <li className='li-items'> {recommendations[0]} </li>
-        <li className='li-items'> {recommendations[1]} </li>
-        <li className='li-items'> {recommendations[2]} </li>
-        <li className='li-items'> {recommendations[3]} </li>
-        <li className='li-items'> {recommendations[4]} </li>
-        </ul>
+    <img className="Lg-img" src= {imageUrl} alt='' />
+     <ul className='LgList'>
+     <p className='li-title'>You should:</p>
+      <li className='li-items'> {dining} </li>
+      <li className='li-items'> {adventures} </li>
+      <li className='li-items'> {shopping} </li>
+     </ul>
         </div>
   </div>
 )
@@ -33,9 +31,9 @@ LgCard.propTypes = {
     title: PropTypes.string,
     date: PropTypes.string,
     author: PropTypes.string,
-    photo: PropTypes.object,
-    description: PropTypes.string,
+    imageUrl: PropTypes.string,
     article: PropTypes.string,
-    listTitle:PropTypes.string,
-    recommendations: PropTypes.array
+    dining: PropTypes.string,
+    shopping: PropTypes.string,
+    adventures: PropTypes.string
   };
