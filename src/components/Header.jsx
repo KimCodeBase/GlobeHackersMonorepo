@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./HeaderStyling.css";
 
 export default function Header() {
