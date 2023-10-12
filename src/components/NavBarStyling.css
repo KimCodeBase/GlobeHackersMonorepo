@@ -1,47 +1,42 @@
-.header-container {
-    background-image: url('public/hendrik-morkel-cGaBxdRhbNU-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 700px;
+.nav-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+    padding: 1em 2em;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
-.header-title {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.nav-container.scrolled {
+    background-color: #fff;
 }
 
-.header-subtitle {
+.logo {
+    color: #333;
     font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 0.5em;
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.nav-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin: 0 0.5em;
 }
 
-.search-input {
-    padding: 12px 20px;
-    font-size: 1.2em;
-    border: 2px solid #ffffff;
-    border-radius: 25px;
+.nav-button:hover {
+    color: #777;
+}
+
+.nav-button:focus {
     outline: none;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #ffffff;
-    transition: transform 0.3s;
-}
-
-.search-input::placeholder {
-    color: #ffffff;
-}
-
-.search-input:hover {
-    transform: scale(1.05);
 }
