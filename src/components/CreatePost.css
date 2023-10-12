@@ -50,7 +50,7 @@
     width: 30vw;
     height: 5vh;
     border-radius: 6px;
-    font-family: 'Neucha', cursive;
+    font-family: 'News Cycle', sans-serif;
     padding: 0.2em;
     border: 1px solid #000;
     margin-top: 1em;
@@ -60,7 +60,7 @@
     width: 30vw;
     height: 38%;
     border-radius: 6px;
-    font-family: 'Neucha', cursive;
+    font-family: 'News Cycle', sans-serif;
     padding: 0.2em;
     border: 1px solid #000;
     margin-top: 1em;
@@ -75,5 +75,5 @@
     font-weight: 600;
     border-radius: 5px;
     width: 40vw;
-    font-family: 'Neucha', cursive;
+    font-family: 'News Cycle', sans-serif;
 }

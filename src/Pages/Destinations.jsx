@@ -72,6 +72,7 @@ export default function Destinations() {
           author={post.fields.author}
           article={post.fields.article}
           imageUrl={post.fields.imageUrl}
+          post={post}
         />
       )))}
     </div>
