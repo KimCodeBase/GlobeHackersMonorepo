@@ -12,6 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+
 }
 
 .follow-text {
@@ -19,4 +20,5 @@
     margin-top: 15px;
     font-size: 1.2em;
     font-weight: bold;
+
 }
