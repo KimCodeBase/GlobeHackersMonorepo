@@ -2,31 +2,39 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: transparent;
     padding: 1em 2em;
     font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.nav-container.scrolled {
+    background-color: #fff;
 }
 
 .logo {
-    margin: 0 1em;
-    color: #fff;
+    color: #333;
     font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 2px;
+    margin: 0 0.5em;
 }
 
 .nav-button {
     background: none;
     border: none;
-    color: #fff;
+    color: #333;
     font-size: 1em;
     cursor: pointer;
     transition: color 0.3s;
-    margin: 0 1em;
+    margin: 0 0.5em;
 }
 
 .nav-button:hover {
-    color: #aaa;
+    color: #777;
 }
 
 .nav-button:focus {

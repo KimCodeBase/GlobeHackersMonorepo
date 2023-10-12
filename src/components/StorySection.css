@@ -4,22 +4,56 @@
     align-items: center;
     justify-content: center;
     padding: 5em 0;
-    background-color: #f9f9f9;
-    /* Light background for contrast */
-    color: #000;
+    background-image: url('public/dejan-zakic-pIJyorTFgI8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
-.story-title {
-    font-size: 2.5em;
+.encouragement-text {
+    font-size: 2em;
     margin-bottom: 1em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    text-align: center;
+    max-width: 80%;
 }
 
-.story-content {
-    font-size: 1.2em;
-    text-align: center;
-    max-width: 800px;
-    line-height: 1.6;
+.subscribe-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.subscribe-input {
+    padding: 10px;
+    font-size: 1em;
+    width: 70%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    color: #000;
+    background-color: #fff;
+}
+
+.subscribe-input::placeholder {
+    color: #aaa;
+}
+
+.subscribe-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: #eee;
+    color: #333;
 }

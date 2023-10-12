@@ -2,13 +2,14 @@
     background-image: url('public/hendrik-morkel-cGaBxdRhbNU-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 900px;
+    /* Increased height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Removed the text-shadow property */
 }
 
 .header-title {
