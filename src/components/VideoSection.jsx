@@ -13,6 +13,7 @@ function VideoSection() {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+      <p className="follow-text">Follow our YouTube channel</p>
     </div>
   );
 }
