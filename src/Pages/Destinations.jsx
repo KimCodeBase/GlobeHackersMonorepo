@@ -25,7 +25,6 @@ export default function Destinations() {
   }, []);
 
   useEffect(() => {
-    // Filter the blog posts when the search query changes
     const filtered = blogPosts.filter((post) =>
       post.fields.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
@@ -53,18 +52,19 @@ export default function Destinations() {
         />
       </div>
       </div>
-      {filteredPosts.map((post, index) => (
-        <SmCard
-        key={index}
-        title={post.fields.title}
-        date={post.fields.date}
-        author={post.fields.author}
-        article={post.fields.article}
-        imageUrl={post.fields.imageUrl}
-        post={post} 
-      />
-      ))}
-      {blogPosts.map((post, index) => (
+      {searchQuery ? ( 
+        filteredPosts.map((post, index) => (
+          <SmCard
+            key={index}
+            title={post.fields.title}
+            date={post.fields.date}
+            author={post.fields.author}
+            article={post.fields.article}
+            imageUrl={post.fields.imageUrl}
+            post={post}
+          />
+        ))
+      ) : ( blogPosts.map((post, index) => (
         <SmCard
           key={index}
           title={post.fields.title}
@@ -72,9 +72,9 @@ export default function Destinations() {
           author={post.fields.author}
           article={post.fields.article}
           imageUrl={post.fields.imageUrl}
+          post={post}
         />
-      ))}
-
+      )))}
     </div>
   );
 }
