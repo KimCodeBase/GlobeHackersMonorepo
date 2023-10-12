@@ -5,7 +5,7 @@ function HeaderVideo() {
   return (
     <div className="header-video-container">
       <video className="header-video" autoPlay loop muted>
-        <source src="./production_id_4205697 (2160p).mp4" type="video/mp4" />
+        <source src="/B-Roll Kim.mp4" type="video/mp4" />
       </video>
       <div className="header-text">
         <h1>Adventure Awaits</h1>
