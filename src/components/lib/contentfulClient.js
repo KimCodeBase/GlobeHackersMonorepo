@@ -40,7 +40,6 @@ const createBlogPostEntry = async (formData) => {
   }
 }))
 .then((entry) => entry.publish().then(console.log(entry)))
-
   } catch(error) {
     console.error(error.message);
     }

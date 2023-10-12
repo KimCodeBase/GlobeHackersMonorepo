@@ -1,5 +1,12 @@
+
+import Header from "../components/Header";
 import CreatePost from "../components/CreatePost";
 
 export default function Features() {
-  return <CreatePost />;
+  return (
+    <div>
+      <Header />
+      <CreatePost />
+    </div>
+  );
 }
