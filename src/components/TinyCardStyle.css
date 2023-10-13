@@ -13,6 +13,7 @@
     margin: 1em;
     padding-top: 2em;
     padding-bottom: 2em;
+    
 }
 
 .tC-title{
@@ -31,11 +32,12 @@
 
 .tC-rightCard {
     max-width: 10vw;
-    padding: 2em;
+    padding: 1em;
     position: relative;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.384);
+    background-color: rgba(0, 0, 0, 0.331);
     transition: all 0.3s ease-in-out;
+    border-radius: 6px;
 }
 
 .tC-rightCard:hover{
