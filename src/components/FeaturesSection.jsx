@@ -6,7 +6,7 @@ function FeaturesSection() {
     <div className="features-section">
       <div className="content-wrapper">
         <img
-          src="./public/JuliKosolapova.jpg"
+          src="/JuliKosolapova.jpg"
           alt="GLOBEHACKERS Feature"
           className="feature-image"
         />

@@ -25,7 +25,6 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* Replace with your Pinterest SVG icon */}
             <svg className="social-icon">...</svg>
           </a>
           <a
