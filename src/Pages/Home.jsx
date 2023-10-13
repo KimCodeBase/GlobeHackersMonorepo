@@ -38,6 +38,7 @@ export default function Home() {
           date={post.fields.date}
           author={post.fields.author}
           article={post.fields.article}
+          imageUrl={post.fields.imageUrl}
         />
       ))}
       <HeaderVideo />
