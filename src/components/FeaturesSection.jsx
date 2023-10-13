@@ -6,10 +6,11 @@ function FeaturesSection() {
     <div className="features-section">
       <div className="content-wrapper">
         <img
-          src="public/juli-kosolapova-be5B3YGDmtc-unsplash.jpg"
+          src="./public/JuliKosolapova.jpg"
           alt="GLOBEHACKERS Feature"
           className="feature-image"
         />
+
         <div className="text-content">
           <h1 className="title">GLOBEHACKERS</h1>
           <p className="subtitle">

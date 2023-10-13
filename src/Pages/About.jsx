@@ -8,7 +8,7 @@ function About() {
       <div className="features-section">
         <div className="content-wrapper">
           <img
-            src="/nitish-meena-BaCmEa2hy8g-unsplash.jpg"
+            src="public/NitischMaena.jpg"
             alt="GLOBEHACKERS About"
             className="feature-image"
           />
@@ -33,4 +33,3 @@ function About() {
 }
 
 export default About;
-
