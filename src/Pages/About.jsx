@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <div className="header-image-container">
-        <img src="public/PascalFoto.jpg" className="header-image" />
+        <img src="/PascalFoto.jpg" className="header-image" />{" "}
       </div>
       <div className="features-section">
         <div className="content-wrapper">

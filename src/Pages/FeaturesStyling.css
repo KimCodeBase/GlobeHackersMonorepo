@@ -1,7 +1,7 @@
 .features-header-container {
     width: 100vw;
     height: 40vh;
-    background-image: url('/public/DavidCha.jpg');
+    background-image: url('/DavidCha.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

@@ -1,5 +1,5 @@
 .header-container {
-    background-image: url('public/HendrikMortel.jpg');
+    background-image: url('/HendrikMortel.jpg');
     background-size: cover;
     background-position: center;
     height: 900px;
