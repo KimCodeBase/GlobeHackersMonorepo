@@ -6,12 +6,12 @@ function About() {
   return (
     <>
       <div className="header-image-container">
-        <img src="/PascalFoto.jpg" className="header-image" />{" "}
+        <img src="/PascalFoto.jpg" className="header-image" />
       </div>
       <div className="features-section">
         <div className="content-wrapper">
           <img
-            src="public/NitischMaena.jpg"
+            src="/NitischMaena.jpg"
             alt="GLOBEHACKERS About"
             className="feature-image"
           />
