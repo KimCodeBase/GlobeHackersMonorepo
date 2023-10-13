@@ -5,6 +5,9 @@ import StorySection from "../components/StorySection";
 function About() {
   return (
     <>
+      <div className="header-image-container">
+        <img src="public/PascalFoto.jpg" className="header-image" />
+      </div>
       <div className="features-section">
         <div className="content-wrapper">
           <img
