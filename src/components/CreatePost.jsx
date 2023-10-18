@@ -1,6 +1,5 @@
 import './CreatePost.css'
 import {useState} from 'react';
-import {createBlogPostEntry} from './lib/contentfulClient';
 import PropTypes from 'prop-types';
 
 export default function CreatePost() {
@@ -12,7 +11,7 @@ export default function CreatePost() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await createBlogPostEntry(form);
+      await // the imported fetch former contentful client(form);
       setFormDataSent(true);
     } catch (error) {
       console.error('Error submitting data:', error);

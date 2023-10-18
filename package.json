@@ -10,9 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@contentful/f36-components": "^4.52.1",
-    "contentful": "^10.6.1",
-    "contentful-management": "^11.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",

@@ -1,6 +1,6 @@
 import TinyCard from './TinyCard';
 import {useState, useEffect} from 'react';
-import { getBlogPostData } from "../components/lib/contentfulClient";
+
 import './TinyContainerStyle.css';
 
 export default function TinyCardContainer() {
@@ -10,7 +10,7 @@ export default function TinyCardContainer() {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const blogPostData = await getBlogPostData();
+          const blogPostData = await // new fetch function here former contentful client();
           setBlogPosts(blogPostData.items);
           setLoading(false);
         } catch (error) {
