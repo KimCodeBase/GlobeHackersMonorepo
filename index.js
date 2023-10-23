@@ -19,7 +19,7 @@ server
 res.send(`
     ${blogPost.map(post => `
     <h1>${post.title}</h1>
-    <h3>${post.date}/${post.author}</h3>
+    <p>${post.date}-${post.author}</p>
     <img src="${post.imageUrl}" />
     <h5>${post.article}</h5>
     <p>${post.dining}</p>
