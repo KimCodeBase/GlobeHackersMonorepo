@@ -14,17 +14,17 @@ server.get('/', (req, res) =>
 server
 .route('/home')
 .get((req, res) => {
-const { title, date, author, imageUrl, article, dining, adventure, shopping } = req.params;
+    const { title, date, author, imageUrl, article, dining, adventure, shopping } = req.params;
 
 res.send(`
-    ${blogPost.map((index) => `
-    <h1>${title}</h1>
-    <h3>${date}/${author}</h3>
-    <img src="${imageUrl}" />
-    <h5>${article}</h5>
-    <p>${dining}</p>
-    <p>${adventure}</p>
-    <p>${shopping}</p>
+    ${blogPost.map(post => `
+    <h1>${post.title}</h1>
+    <h3>${post.date}/${post.author}</h3>
+    <img src="${post.imageUrl}" />
+    <h5>${post.article}</h5>
+    <p>${post.dining}</p>
+    <p>${post.adventure}</p>
+    <p>${post.shopping}</p>
     `).join('')}
 `)
 })
@@ -32,16 +32,24 @@ res.send(`
 
 server
 .route('/Destinations')
-.get()
+.get((req, res) => {
+
+})
 
 server
 .route('/Features')
-.get()
-.post()
+.get((req, res) => {
+    
+})
+.post((req, res) => {
+    
+})
 
 server.
 route('/About')
-.get()
+.get((req, res) => {
+    
+})
 
 
 server.listen(port, () => console.log(`Server up on port ${port}`));
