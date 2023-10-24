@@ -1,9 +1,13 @@
+require('dotenv').config();
 const express = require('express');
 const server = express();
 const port = process.env.PORT || 8000;
-const blogPost = require('./blogPost');
+const dbPool = require('./db/pgClient');
+const { getAllPosts } = require('./controllers/blogPostControll');
+
 
 server.use(express.json());
+
 server.get('/', (req, res) =>
   res.send(
     `<p>server is listening on port ${port}</p>`
@@ -12,26 +16,14 @@ server.get('/', (req, res) =>
 
 
 server
-.route('/home')
-.get((req, res) => {
-    const { title, date, author, imageUrl, article, dining, adventure, shopping } = req.params;
+.route('/destinations')
+.get(getAllPosts);
 
-res.send(`
-    ${blogPost.map(post => `
-    <h1>${post.title}</h1>
-    <p>${post.date}-${post.author}</p>
-    <img src="${post.imageUrl}" />
-    <h5>${post.article}</h5>
-    <p>${post.dining}</p>
-    <p>${post.adventure}</p>
-    <p>${post.shopping}</p>
-    `).join('')}
-`)
-})
+
 
 
 server
-.route('/Destinations')
+.route('/Home')
 .get((req, res) => {
 
 })
