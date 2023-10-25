@@ -3,7 +3,7 @@ const express = require('express');
 const server = express();
 const port = process.env.PORT || 8000;
 const dbPool = require('./db/pgClient');
-const { getAllPosts } = require('./controllers/blogPostControll');
+const { getAllPosts, addNewPost } = require('./controllers/blogPostControll');
 
 
 server.use(express.json());
@@ -17,7 +17,8 @@ server.get('/', (req, res) =>
 
 server
 .route('/destinations')
-.get(getAllPosts);
+.get(getAllPosts)
+.post(addNewPost)
 
 
 
